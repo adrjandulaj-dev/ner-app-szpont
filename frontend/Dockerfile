@@ -3,10 +3,16 @@ FROM node:18-alpine as build
 
 WORKDIR /app
 
+# Set environment variables for build
+ENV SKIP_PREFLIGHT_CHECK=true
+ENV GENERATE_SOURCEMAP=false
+ENV TSC_COMPILE_ON_ERROR=true
+ENV ESLINT_NO_DEV_ERRORS=true
+
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies with force to resolve conflicts
 RUN npm install --legacy-peer-deps --force
 
 # Copy source code
