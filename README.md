@@ -214,4 +214,4 @@ data = resp.json()
  ```
 
 ### Web App
-Web application for all of these stuff, you can see how it works and what it does in the video, so tbh I dunno even care about typing more, it's late and nobody even gonna read that crap, just wanna say that form is kinda bugged (csrf tokens seem kinda fucked in async flask :PPPPPPPPP)
+Web application for all of these stuff, you can see how it works and what it does in the video, so tbh I dunno even care about typing more, it's late and nobody even gonna read that crap, just wanna say that form is kinda bugged (csrf tokens seem kinda fucked in async flask :PPPPPPPPP)# ner-app-szpont
